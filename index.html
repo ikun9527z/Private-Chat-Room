@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="profile-section">
+            <div class="material-input">
+                <input type="text" id="nickname" placeholder="输入昵称">
+                <label for="nickname">输入昵称</label>
+            </div>
+            <div class="file-upload-wrapper">
+                <input type="file" id="avatar" accept="image/*" class="custom-file-input">
+                <label for="avatar" class="custom-file-label">选择头像</label>
+            </div>
+            <button id="join-btn">加入聊天</button>
+        </div>
+        
+        <div class="messages-container" id="messages">
+            <!-- 消息将在这里动态添加 -->
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="message-input" placeholder="输入消息...">
+            <div class="file-upload-wrapper">
+                <input type="file" id="file-upload" accept="image/*,.pdf,.doc,.docx" class="custom-file-input">
+                <label for="file-upload" class="custom-file-label">文件</label>
+            </div>
+            <button id="send-btn">发送</button>
+        </div>
+    </div>
+    <script src="js/chat.js"></script>
+</body>
+</html>

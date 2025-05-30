@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>聊天室管理</title>
+    <style>
+        .container { padding: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; border: 1px solid #ddd; }
+        .delete-btn { 
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .clear-all-btn {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container { 
+                padding: 10px; 
+            }
+            
+            table { 
+                display: block;
+                overflow-x: auto;
+            }
+            
+            th, td { 
+                padding: 5px;
+                min-width: 100px;
+            }
+            
+            .clear-all-btn {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>聊天记录管理</h2>
+        <button class="clear-all-btn" onclick="clearAllMessages()">清空所有聊天记录</button>
+        <table id="messageTable">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>内容</th>
+                    <th>类型</th>
+                    <th>时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
