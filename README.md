@@ -26,7 +26,7 @@
 ### 安装步骤
 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/MyWeChat.git
+git clone https://github.com/yourusername/MyWeChat.git](https://github.com/ikun9527z/Private-Chat-Room/tree/master
 cd MyWeChat
 ```
 
